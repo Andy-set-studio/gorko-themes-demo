@@ -1,0 +1,18 @@
+{
+  "name": "gorko-custom-props-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently 'sass scss/global.scss css/global.css --quiet --watch' 'npx serve'",
+    "build": "sass scss/global.scss css/global.css --quiet"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^6.2.0",
+    "gorko": "^0.6.0",
+    "sass": "^1.34.1"
+  }
+}

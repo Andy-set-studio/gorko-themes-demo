@@ -1,0 +1,40 @@
+@import 'config';
+
+@import '../node_modules/gorko/gorko.scss';
+
+@import 'reset';
+
+body {
+  padding: 2rem;
+  display: grid;
+  place-items: center;
+
+  @include apply-utility('font', 'base');
+}
+
+h1 {
+  line-height: 1.1;
+}
+
+code {
+  font-size: 1.4em;
+}
+
+article {
+  padding: get-size('700');
+  max-width: 40rem;
+}
+
+article > * + * {
+  margin-top: get-size('500');
+}
+
+a {
+  color: currentColor;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
